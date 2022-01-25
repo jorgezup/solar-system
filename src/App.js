@@ -13,7 +13,6 @@ class App extends React.Component {
       <>
         <Header />
         <SolarSystem />
-        <Missions />
         {planets.map((planet, index) => (
           <PlanetCard
             key={ index }
@@ -21,6 +20,7 @@ class App extends React.Component {
             planetImage={ planet.image }
           />
         ))}
+        <Missions />
       </>
     );
   }
