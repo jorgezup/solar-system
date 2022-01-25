@@ -14,9 +14,9 @@ class App extends React.Component {
         <SolarSystem />
         {planets.map((planet, index) => (
           <PlanetCard
-            key={index}
-            planetName={planet.name}
-            planetImage={planet.image}
+            key={ index }
+            planetName={ planet.name }
+            planetImage={ planet.image }
           />
         ))}
       </>
